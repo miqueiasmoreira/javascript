@@ -17,6 +17,22 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
 }
 
+div#msg {
+    text-align: center;
+}
+
+div > img {
+    padding: 10px;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+div#foto {
+    text-align: center;
+}
+
 footer {
  color: white;
  text-align: center;

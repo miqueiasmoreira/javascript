@@ -3,6 +3,9 @@
 body {
     background-color: #1f1f1f;
     color: white;
+
+
+    text-align: center;
 }
 header {
     background-color: #671d9c;
@@ -10,6 +13,7 @@ header {
     font-family: "Monomaniac One", sans-serif;
     font-weight: lighter;
     letter-spacing: 10px;
+    text-align: left;
 }
 
 div {
@@ -17,18 +21,46 @@ div {
     width: 300px
 }
 
-div#jogoDestaque {
-    background-color: orange;
+.texto-imagem {
+    display: grid; /* Habilita o layout em grade */
+    grid-template-columns: 1fr 1fr; /* Divide o espaço igualmente entre texto e imagem */
+    gap: 20px; /* Espaço entre as colunas */
+    align-items: stretch; /* Garante que ambos tenham a mesma altura */
+    max-width: 1200px; /* Limita a largura total do conteúdo */
+    margin: 0 auto; /* Centraliza o layout */
 }
-div#jogoDestaque > img {
-    background-color: red;
+
+.texto {
+    text-align: justify; /* Justifica o texto */
+    font-size: 16px; /* Reduz o tamanho da fonte para compactar o texto */
+    line-height: 1.4; /* Diminui o espaçamento entre linhas */
+    padding: 10px; /* Adiciona espaçamento interno */
+    overflow: hidden; /* Impede o texto de ultrapassar os limites */
 }
+
+.imagem img {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    height: 100%; /* Ajusta a altura proporcionalmente ao texto */
+    object-fit: contain; /* Mantém a proporção da imagem sem cortá-la */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+#conteudoPrincipal {
+    padding: 20px; /* Espaçamento interno do conteúdo principal */
+    background-color: orange; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 20px auto; /* Centraliza o conteúdo principal */
+}
+
 
 div#tranding {
     display: inline;
+    text-align: center;
 }
 
 #tranding > img {
     border: black;
     border-radius: 24px;
+    padding: 2px;
 }

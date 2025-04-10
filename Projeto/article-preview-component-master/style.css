@@ -3,4 +3,13 @@
     height: 200px;
     width: 1440px;
     margin: auto;
+    padding: 100px;
+}
+
+#content {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    display: felx
 }
